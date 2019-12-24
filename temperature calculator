@@ -1,0 +1,14 @@
+def temperature():
+    global v
+    print("celsuis to farenheit: 1")
+    print("Farenheit to Celsuis: 2")
+    v = input("Enter 1 or 2: ")
+    
+    if v == "1":
+        Temperaturec = input("Temperature in celsius: ")
+        print ("Temperature in Farenheit:" , ((float(Temperaturec))*1.8) + float(32))
+    elif v == "2":
+        Temperaturef = input("Temperature in Farenheit")
+        print ("Temperature in celsuis:" , ((float(Temperaturef))*float((5/9)))  - float(32))
+        
+temperature()
